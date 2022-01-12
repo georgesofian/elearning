@@ -1,62 +1,97 @@
-.menu {
+.orare {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: up;
+  align-items: left;
   flex-direction: column;
-}
-.menu .menuTitle {
-  font-family: cursive;
-  font-size: 60px;
-}
-
-.menuList {
-  width: 70vw;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-}
-
-/* MENU ITEM STYLING */
-
-.menuItem {
-  border-radius: 15px;
-  width: 300px;
-  height: 350px;
-  margin: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-.menuItem:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
-
-.menuItem div {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
-  height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.menuItem h1,
-.menuItem p {
-  margin-left: 20px;
+.headerContainer {
+  width: auto;
+  margin-left: 50px;
+  height: 550px;
 }
 
-@media only screen and (max-width: 1300px) {
-  .menuList {
-    grid-template-columns: 1fr 1fr;
+.headerContainer h1 {
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  height: 60px;
+  font-weight: 50;
+  color: black;
+}
+
+.headerContainer p {
+  padding: 0;
+  font-size: 40px;
+  font-weight: lighter;
+  color: black;
+}
+
+.headerContainer button {
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #121619;
+  height: 50px;
+  width: 180px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.headerContainer button:hover {
+  background-color: #07090a;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+@media only screen and (max-width: 650px) {
+  .materiale {
+    justify-content: center;
+    align-items: center;
   }
-}
 
-@media only screen and (max-width: 800px) {
-  .menuList {
-    grid-template-columns: 1fr;
+
+  .headerContainer {
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+  }
+
+  .headerContainer h1 {
+    font-size: 40px;
+    height: 30px;
+    color: white;
+  }
+
+  .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+
+  .headerContainer button {
+    background-color: white;
+    color: #121619;
+    margin-bottom: 30px;
+  }
+
+  .headerContainer button:hover {
+    background-color: rgb(225, 225, 225);
+    color: #121619;
   }
 }

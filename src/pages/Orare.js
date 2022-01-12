@@ -4,11 +4,11 @@ import "../styles/Orare.css";
 
 function Orare() {
   return (
-    <div className="menu">
-      <h1 className="menuTitle">Orare</h1>
-      <div className="menuList">
-        
+    <div className="orare" style={{ backgroundImage: `url()` }}>
+      <div className="headerContainer">
+        <h2>Orar</h2>
       </div>
+
     </div>
   );
 }

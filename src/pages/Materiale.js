@@ -4,11 +4,11 @@ import "../styles/Materiale.css";
 
 function Materiale() {
   return (
-    <div className="menu">
-      <h1 className="menuTitle">Materiale didactice</h1>
-      <div className="menuList">
-        
+    <div className="materiale" style={{ backgroundImage: `url()` }}>
+      <div className="headerContainer">
+        <h2>Materiale didactice</h2>
       </div>
+
     </div>
   );
 }
